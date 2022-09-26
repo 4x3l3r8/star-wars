@@ -255,7 +255,7 @@ function App() {
             ) : (
               <>
                 {/* Opening crawl text */}
-                <div id="board">
+                <div id="board" className="w-screen">
                   <div id="content">
                     <p id="title" className="story">
                       Episode {fetchedMovieDeets?.episode_id}
@@ -295,6 +295,7 @@ function App() {
                             enableColumnActions={false}
                             initialState={{
                               showColumnFilters: true,
+                              density: "compact"
                             }}
                           />
                         </div>
